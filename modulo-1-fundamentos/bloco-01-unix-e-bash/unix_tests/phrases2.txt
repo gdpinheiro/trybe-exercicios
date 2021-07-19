@@ -1,0 +1,7 @@
+Conte o número de linhas que contêm as letras br .
+Conte o número de linhas que não contêm as letras br .
+Adicione dois nomes de países ao final do arquivo phrases2.txt .
+Crie um novo arquivo chamado bunch_of_things.txt com os conteúdos dos arquivos phrases2.txt e countries.txt
+Ordene o arquivo bunch_of_things.txt .
+Katmandu
+Wakanda

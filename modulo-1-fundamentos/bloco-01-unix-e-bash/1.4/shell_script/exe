@@ -1,0 +1,21 @@
+#!/bin/bash
+echo 'Nossa! Estou vivo!'
+
+variavel="Eu estou logado como usuário $user"
+echo $variavel
+
+variavel="Eu estou logado como usuário $user"
+echo $variavel
+
+variavel="Meu diretório atual é o `pwd`"
+echo $variavel
+
+echo "Entre com o valor para a variável: " ; read variavel
+echo $variavel
+
+if [ -e $bolinha ]
+	then
+		echo 'A variável $bolinha existe.'
+	else
+		echo 'A variável $bolinha não existe.'
+	fi

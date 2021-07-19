@@ -1,0 +1,4 @@
+Busque pelas frases que não contenham a palavra fox .
+Conte o número de palavras do arquivo phrases.txt .
+Conte o número de linhas do arquivo phrases.txt .
+Crie os arquivos empty.tbt e empty.pdf .
