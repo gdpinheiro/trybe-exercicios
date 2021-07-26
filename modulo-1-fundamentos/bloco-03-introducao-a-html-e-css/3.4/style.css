@@ -1,16 +1,19 @@
 body {
   font-family: sans-serif;
+  background-color: hsl(175, 30%, 80%);
 }
 
 .header {
   background-color: hsl(175, 59%, 39%);
   font-size: 44px;
   padding: 0.5em;
+  outline: 2px solid hsl(175, 59%, 49%);
 }
 
 .nav {
   background-color: hsl(175, 59%, 69%);
   padding: 5px;
+  outline: 2px solid hsl(175, 59%, 49%);
 }
 
 .nav ul li {
