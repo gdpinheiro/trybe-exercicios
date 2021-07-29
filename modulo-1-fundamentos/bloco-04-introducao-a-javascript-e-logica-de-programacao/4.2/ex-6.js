@@ -8,4 +8,8 @@ for (let index = 0; index < numbers.length; index += 1) {
   }
 }
 
-console.log(isOdd);
+if (isOdd != 0) {
+  console.log(isOdd);
+} else {
+  console.log("Nenhum valor ímpar encontrado");
+}
