@@ -25,3 +25,15 @@ changeP(
   "center-content",
   "Magna pariatur occaecat adipisicing laboris incididunt laboris dolor adipisicing mollit duis elit quis irure. Officia id cillum magna deserunt elit sit labore tempor cillum proident. Culpa id labore quis officia cillum ut quis mollit laboris consequat proident pariatur."
 );
+
+function changeBgColor(className, color) {
+  for (
+    let i = 0;
+    i < document.getElementsByClassName(className).length;
+    i += 1
+  ) {
+    document.getElementsByClassName(className)[i].style.backgroundColor = color;
+  }
+}
+
+changeBgColor("main-content", "rgb(76,164,109)");
