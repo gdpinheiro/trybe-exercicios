@@ -10,3 +10,18 @@
         5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
         6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
+
+function changeP(className, paragraph) {
+  for (
+    let i = 0;
+    i < document.getElementsByClassName(className).length;
+    i += 1
+  ) {
+    document.getElementsByClassName(className)[i].innerText = paragraph;
+  }
+}
+
+changeP(
+  "center-content",
+  "Magna pariatur occaecat adipisicing laboris incididunt laboris dolor adipisicing mollit duis elit quis irure. Officia id cillum magna deserunt elit sit labore tempor cillum proident. Culpa id labore quis officia cillum ut quis mollit laboris consequat proident pariatur."
+);
