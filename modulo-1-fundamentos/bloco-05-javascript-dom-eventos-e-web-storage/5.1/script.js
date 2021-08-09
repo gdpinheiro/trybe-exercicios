@@ -41,3 +41,17 @@ changeBgColor("main-content", "rgb(76,164,109)");
 changeBgColor("center-content", "white");
 
 changeText("title", "Exercício 5.1 - JavaScript");
+
+function upperCase(className) {
+  for (
+    let i = 0;
+    i < document.getElementsByClassName(className).length;
+    i += 1
+  ) {
+    document.getElementsByClassName(className)[i].innerText = document
+      .getElementsByClassName(className)
+      [i].innerText.toUpperCase();
+  }
+}
+
+upperCase("center-content");
