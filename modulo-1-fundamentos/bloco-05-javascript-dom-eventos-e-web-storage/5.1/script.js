@@ -20,12 +20,6 @@ function changeText(className, text) {
     document.getElementsByClassName(className)[i].innerText = text;
   }
 }
-
-changeText(
-  "center-content",
-  "Magna pariatur occaecat adipisicing laboris incididunt laboris dolor adipisicing mollit duis elit quis irure. Officia id cillum magna deserunt elit sit labore tempor cillum proident. Culpa id labore quis officia cillum ut quis mollit laboris consequat proident pariatur."
-);
-
 function changeBgColor(className, color) {
   for (
     let i = 0;
@@ -35,13 +29,6 @@ function changeBgColor(className, color) {
     document.getElementsByClassName(className)[i].style.backgroundColor = color;
   }
 }
-
-changeBgColor("main-content", "rgb(76,164,109)");
-
-changeBgColor("center-content", "white");
-
-changeText("title", "Exercício 5.1 - JavaScript");
-
 function upperCase(className) {
   for (
     let i = 0;
@@ -53,5 +40,23 @@ function upperCase(className) {
       [i].innerText.toUpperCase();
   }
 }
+function logTag(tagName) {
+  for (let i = 0; i < document.getElementsByTagName(tagName).length; i += 1) {
+    console.log(document.getElementsByTagName(tagName)[0].innerText);
+  }
+}
+
+changeText(
+  "center-content",
+  "Magna pariatur occaecat adipisicing laboris incididunt laboris dolor adipisicing mollit duis elit quis irure. Officia id cillum magna deserunt elit sit labore tempor cillum proident. Culpa id labore quis officia cillum ut quis mollit laboris consequat proident pariatur."
+);
+
+changeBgColor("main-content", "rgb(76,164,109)");
+
+changeBgColor("center-content", "white");
+
+changeText("title", "Exercício 5.1 - JavaScript");
 
 upperCase("center-content");
+
+logTag("section");
