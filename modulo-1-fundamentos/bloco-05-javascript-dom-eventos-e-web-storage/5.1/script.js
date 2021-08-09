@@ -37,3 +37,5 @@ function changeBgColor(className, color) {
 }
 
 changeBgColor("main-content", "rgb(76,164,109)");
+
+changeBgColor("center-content", "white");
