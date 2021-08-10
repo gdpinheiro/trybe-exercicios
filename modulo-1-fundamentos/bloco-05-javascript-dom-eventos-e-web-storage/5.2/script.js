@@ -110,6 +110,12 @@ document.querySelector(".main-content").removeChild(deletion);
 
 // 4. Centralize a section criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto da section ;
 
+document
+  .querySelector(".right-content")
+  .setAttribute("style", "margin-right: auto");
+
+// toCenter.setAttribute("", "")
+
 // 5. Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
 
 // 6. Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
