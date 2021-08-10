@@ -121,3 +121,6 @@ document
   .parentNode.setAttribute("style", "background-color: green");
 
 // 6. Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
+
+document.querySelector("ul").lastElementChild.remove();
+document.querySelector("ul").lastElementChild.remove();
