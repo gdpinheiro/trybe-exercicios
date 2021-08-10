@@ -96,6 +96,12 @@ document.body.querySelector("h1").className = "title";
 
 // 2. Adicione a classe description nas 3 tags h3 criadas;
 
+let descriptions = document.querySelectorAll("h3");
+
+for (let i = 0; i < descriptions.length; i += 1) {
+  document.body.querySelectorAll("h3")[i].className = "description";
+}
+
 // 3. Remova a section criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() ;
 
 // 4. Centralize a section criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto da section ;
