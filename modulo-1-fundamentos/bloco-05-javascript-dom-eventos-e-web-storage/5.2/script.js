@@ -14,6 +14,12 @@ mainEx2.className = "main-content";
 
 // 3. Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
 
+let sectionEx3 = document.createElement("section");
+
+document.getElementsByClassName("main-content")[0].appendChild(sectionEx3);
+
+sectionEx3.className = "center-content";
+
 // 4. Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
 
 // 5. Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
