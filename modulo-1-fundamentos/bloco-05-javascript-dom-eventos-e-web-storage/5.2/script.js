@@ -47,6 +47,14 @@ sectionEx6.className = "right-content";
 
 // 7. Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
 
+let imgEx7 = document.createElement("img");
+
+document.getElementsByClassName("left-content")[0].appendChild(imgEx7);
+
+imgEx7.setAttribute("src", "https://picsum.photos/200");
+
+imgEx7.className = "small-image";
+
 // 8. Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
 
 // 9. Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
