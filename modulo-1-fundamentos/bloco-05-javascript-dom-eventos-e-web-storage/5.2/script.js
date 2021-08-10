@@ -81,3 +81,9 @@ addUl("nove");
 addUl("dez");
 
 // 9. Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+
+for (let i = 0; i < 3; i += 1) {
+  let h3Ex9 = document.createElement("h3");
+
+  document.getElementsByClassName("main-content")[0].appendChild(h3Ex9);
+}
