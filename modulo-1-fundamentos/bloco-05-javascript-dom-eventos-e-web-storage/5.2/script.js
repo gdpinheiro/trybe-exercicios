@@ -22,6 +22,13 @@ sectionEx3.className = "center-content";
 
 // 4. Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
 
+let pEx4 = document.createElement("p");
+
+document.getElementsByClassName("center-content")[0].appendChild(pEx4);
+
+pEx4.innerText =
+  "Culpa minim cupidatat labore nulla pariatur Lorem dolor. Anim aliqua magna aute culpa Lorem sunt. Quis occaecat commodo dolor est laboris exercitation laboris cillum est velit amet. Sint esse mollit nisi aliquip occaecat cillum. Cupidatat occaecat reprehenderit cillum sit voluptate veniam commodo.";
+
 // 5. Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
 
 // 6. Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
