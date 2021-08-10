@@ -92,6 +92,8 @@ for (let i = 0; i < 3; i += 1) {
 
 // 1. Adicione a classe title na tag h1 criada;
 
+document.body.querySelector("h1").className = "title";
+
 // 2. Adicione a classe description nas 3 tags h3 criadas;
 
 // 3. Remova a section criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() ;
