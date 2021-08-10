@@ -57,4 +57,27 @@ imgEx7.className = "small-image";
 
 // 8. Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
 
+let ulEx8 = document.createElement("ul");
+
+document.getElementsByClassName("right-content")[0].appendChild(ulEx8);
+
+function addUl(text) {
+  let listItem = document.createElement("li");
+
+  listItem.innerText = text;
+
+  document.body.querySelector("ul").appendChild(listItem);
+}
+
+addUl("um");
+addUl("dois");
+addUl("três");
+addUl("quatro");
+addUl("cinco");
+addUl("seis");
+addUl("sete");
+addUl("oito");
+addUl("nove");
+addUl("dez");
+
 // 9. Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
