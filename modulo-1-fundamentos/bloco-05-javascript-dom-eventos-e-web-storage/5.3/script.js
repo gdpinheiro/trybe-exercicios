@@ -56,3 +56,15 @@ function createDay() {
 }
 
 createDay();
+
+function createBtn(nome) {
+  let btn = document.createElement("button");
+
+  btn.innerText = nome;
+
+  btn.setAttribute("id", "btn-holiday");
+
+  document.querySelector(".buttons-container").appendChild(btn);
+}
+
+createBtn("Feriados");
