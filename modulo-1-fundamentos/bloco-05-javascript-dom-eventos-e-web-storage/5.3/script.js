@@ -57,17 +57,17 @@ function createDay() {
 
 createDay();
 
-function createBtn(nome) {
+function createBtn(name, id) {
   let btn = document.createElement("button");
 
-  btn.innerText = nome;
+  btn.innerText = name;
 
-  btn.setAttribute("id", "btn-holiday");
+  btn.setAttribute("id", id);
 
   document.querySelector(".buttons-container").appendChild(btn);
 }
 
-createBtn("Feriados");
+createBtn("Feriados", "btn-holiday");
 
 document.querySelector("#btn-holiday").addEventListener("click", clickColor);
 let holidayToggle = false;
@@ -91,3 +91,5 @@ function clickColor() {
     holidayToggle = false;
   }
 }
+
+createBtn("Sexta-feira", "btn-friday");
