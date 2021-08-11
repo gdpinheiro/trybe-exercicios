@@ -114,3 +114,23 @@ function clickText() {
     fridayToggle = false;
   }
 }
+
+let dayMouse = document.querySelectorAll(".day");
+
+dayMouse.forEach((element) => {
+  element.addEventListener("mouseover", dayOver);
+
+  element.addEventListener("mouseout", dayOut);
+});
+
+function dayOver(targetDay) {
+  let changeSize = targetDay.target;
+
+  changeSize.style.fontSize = 40 + "px";
+}
+
+function dayOut(targetDay) {
+  let changeSize = targetDay.target;
+
+  changeSize.style.fontSize = 20 + "px";
+}
