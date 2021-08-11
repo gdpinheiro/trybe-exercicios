@@ -28,6 +28,8 @@ const dezDaysList = [
   21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
 ];
 
+const fridays = [4, 11, 18, 25];
+
 function createDay() {
   for (let i = 0; i < dezDaysList.length; i += 1) {
     let lItem = document.createElement("li");
@@ -93,3 +95,25 @@ function clickColor() {
 }
 
 createBtn("Sexta-feira", "btn-friday");
+
+document.querySelector("#btn-friday").addEventListener("click", clickText);
+
+let fridayToggle = false;
+
+function clickText() {
+  let friday = document.querySelectorAll(".friday");
+
+  if (fridayToggle === false) {
+    for (let i = 0; i < friday.length; i += 1) {
+      friday[i].innerText = "SEXTA-FEIRA";
+    }
+
+    fridayToggle = true;
+  } else {
+    for (let i = 0; i < friday.length; i += 1) {
+      friday[i].innerText = fridays[i];
+    }
+
+    fridayToggle = false;
+  }
+}
