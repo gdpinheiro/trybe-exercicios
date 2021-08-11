@@ -161,6 +161,16 @@ createTask("Cozinhar");
 
 // Exercício 8
 
+function createSub(color) {
+  let sub = document.createElement("div");
+
+  sub.setAttribute("style", "background-color: " + color);
+
+  document.querySelector(".my-tasks").appendChild(sub);
+}
+
+createSub("green");
+
 // Exercício 9
 
 // Exercício 10
