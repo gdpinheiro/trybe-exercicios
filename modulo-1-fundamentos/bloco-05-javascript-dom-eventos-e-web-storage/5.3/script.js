@@ -164,6 +164,8 @@ createTask("Cozinhar");
 function createSub(color) {
   let sub = document.createElement("div");
 
+  sub.className = "task";
+
   sub.setAttribute("style", "background-color: " + color);
 
   document.querySelector(".my-tasks").appendChild(sub);
@@ -172,6 +174,32 @@ function createSub(color) {
 createSub("green");
 
 // Exercício 9
+
+let taskMouse = document.querySelectorAll(".task");
+
+taskMouse.forEach((element) => {
+  element.addEventListener("click", clickTask);
+});
+
+let taskToggle = false;
+
+function clickTask() {
+  let task = document.querySelectorAll(".task");
+
+  if (taskToggle === false) {
+    for (let i = 0; i < task.length; i += 1) {
+      task[i].className = "task selected";
+    }
+
+    taskToggle = true;
+  } else {
+    for (let i = 0; i < task.length; i += 1) {
+      task[i].className = "task";
+    }
+
+    taskToggle = false;
+  }
+}
 
 // Exercício 10
 
