@@ -21,14 +21,14 @@ function createDaysOfTheWeek() {
 
 createDaysOfTheWeek();
 
-// Escreva seu código abaixo.
-
 const dezDaysList = [
   29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
   21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
 ];
 
 const fridays = [4, 11, 18, 25];
+
+// Exercício 1
 
 function createDay() {
   for (let i = 0; i < dezDaysList.length; i += 1) {
@@ -56,6 +56,8 @@ function createDay() {
 
 createDay();
 
+// Exercício 2
+
 function createBtn(name, id) {
   let btn = document.createElement("button");
 
@@ -67,6 +69,8 @@ function createBtn(name, id) {
 }
 
 createBtn("Feriados", "btn-holiday");
+
+// Exercício 3
 
 document.querySelector("#btn-holiday").addEventListener("click", clickColor);
 let holidayToggle = false;
@@ -91,7 +95,11 @@ function clickColor() {
   }
 }
 
+// Exercício 4
+
 createBtn("Sexta-feira", "btn-friday");
+
+// Exercício 5
 
 document.querySelector("#btn-friday").addEventListener("click", clickText);
 
@@ -115,6 +123,8 @@ function clickText() {
   }
 }
 
+// Exercício 6
+
 let dayMouse = document.querySelectorAll(".day");
 
 dayMouse.forEach((element) => {
@@ -134,3 +144,25 @@ function dayOut(targetDay) {
 
   changeSize.style.fontSize = 20 + "px";
 }
+
+// Exercício 7
+
+function createTask(name) {
+  let task = document.createElement("span");
+
+  task.innerText = name;
+
+  task.setAttribute("class", "my-tasks");
+
+  document.querySelector(".my-tasks").appendChild(task);
+}
+
+createTask("Cozinhar");
+
+// Exercício 8
+
+// Exercício 9
+
+// Exercício 10
+
+// Exercício Bônus
