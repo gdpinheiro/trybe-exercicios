@@ -68,3 +68,26 @@ function createBtn(nome) {
 }
 
 createBtn("Feriados");
+
+document.querySelector("#btn-holiday").addEventListener("click", clickColor);
+let holidayToggle = false;
+
+function clickColor() {
+  if (holidayToggle === false) {
+    let holidays = document.querySelectorAll(".holiday");
+
+    for (let i = 0; i < holidays.length; i += 1) {
+      holidays[i].style.backgroundColor = "red";
+    }
+
+    holidayToggle = true;
+  } else {
+    let holidays = document.querySelectorAll(".holiday");
+
+    for (let i = 0; i < holidays.length; i += 1) {
+      holidays[i].style.backgroundColor = "rgb(238,238,238)";
+    }
+
+    holidayToggle = false;
+  }
+}
