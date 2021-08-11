@@ -36,19 +36,16 @@ function createDay() {
 
     lItem.innerText = dezDaysList[i];
 
-    if (
-      dezDaysList[i] === 24 ||
-      dezDaysList[i] === 25 ||
-      dezDaysList[i] === 31
-    ) {
+    if (dezDaysList[i] === 24 || dezDaysList[i] === 31) {
       lItem.className = "day holiday";
     } else if (
       dezDaysList[i] === 4 ||
       dezDaysList[i] === 11 ||
-      dezDaysList[i] === 18 ||
-      dezDaysList[i] === 25
+      dezDaysList[i] === 18
     ) {
       lItem.className = "day friday";
+    } else if (dezDaysList[i] === 25) {
+      lItem.className = "day holiday friday";
     } else {
       lItem.className = "day";
     }
@@ -79,7 +76,7 @@ function clickColor() {
     let holidays = document.querySelectorAll(".holiday");
 
     for (let i = 0; i < holidays.length; i += 1) {
-      holidays[i].style.backgroundColor = "red";
+      holidays[i].style.backgroundColor = "lightgreen";
     }
 
     holidayToggle = true;
@@ -105,7 +102,7 @@ function clickText() {
 
   if (fridayToggle === false) {
     for (let i = 0; i < friday.length; i += 1) {
-      friday[i].innerText = "SEXTA-FEIRA";
+      friday[i].innerText = "SEXTA";
     }
 
     fridayToggle = true;
