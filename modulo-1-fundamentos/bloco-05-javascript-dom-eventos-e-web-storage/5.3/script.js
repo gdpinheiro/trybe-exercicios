@@ -131,6 +131,8 @@ dayMouse.forEach((element) => {
   element.addEventListener("mouseover", dayOver);
 
   element.addEventListener("mouseout", dayOut);
+
+  element.addEventListener("click", clickDayTask);
 });
 
 function dayOver(targetDay) {
@@ -202,5 +204,33 @@ function clickTask() {
 }
 
 // Exercício 10
+
+let taskList = document.getElementsByClassName("my-tasks")[0];
+
+let selectedTask = taskList.getElementsByClassName("selected");
+
+let dayTaskToggle = false;
+
+function clickDayTask(targetDay) {
+  let dayTask = targetDay.target;
+
+  if (dayTaskToggle === false) {
+    dayTask.style.color = selectedTask[0].style.backgroundColor;
+
+    dayTask.classList.add("selected");
+
+    console.log(dayTask.classList);
+
+    dayTaskToggle = true;
+  } else {
+    dayTask.style.color = "rgb(119,119,119)";
+
+    dayTask.classList.remove("selected");
+
+    console.log(dayTask.classList);
+
+    dayTaskToggle = false;
+  }
+}
 
 // Exercício Bônus
