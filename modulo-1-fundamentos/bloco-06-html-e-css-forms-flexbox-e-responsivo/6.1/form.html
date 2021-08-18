@@ -10,6 +10,7 @@
   <body>
     <form action="">
       <fieldset>
+        <legend>Dados Pessoais</legend>
         <label for="input-nome"
           >Nome:
           <input
@@ -75,6 +76,53 @@
         </label>
         <label for="tipo-apt">
           <input type="radio" name="tipo-moradia" id="tipo-apt" />Apartamento
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Dados do Último Emprego</legend>
+        <label for="input-resumo">
+          Resumo do currículo:
+          <textarea
+            name="resumoCurrículo"
+            id="input-resumo"
+            cols="30"
+            rows="5"
+            maxlength="1000"
+            required
+          ></textarea>
+        </label>
+        <br />
+        <label for="input-cargo"
+          >Cargo
+          <input
+            type="text"
+            name="cargo"
+            id="input-cargo"
+            maxlength="40"
+            required
+          />
+        </label>
+        <br />
+        <label for="input-cargoDescricao"
+          >Descrição do cargo
+          <input
+            type="text"
+            name="cargoDescricao"
+            id="input-cargoDescricao"
+            maxlength="500"
+            required
+          />
+        </label>
+        <br />
+        <label for="input-data"
+          >Data de início
+          <input
+            type="text"
+            name="data"
+            id="input-data"
+            pattern="[0-31]/[0-12]/\n"
+            required
+          />
         </label>
       </fieldset>
     </form>
