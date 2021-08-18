@@ -4,3 +4,9 @@
 #input-data:invalid {
   border: 2px solid red;
 }
+
+#feedback {
+  background-color: blue;
+  color: red;
+  font-size: 20px;
+}

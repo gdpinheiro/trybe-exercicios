@@ -93,6 +93,7 @@ function gerarEstados(estado, sigla) {
 function verificarVazios(input) {
   for (let i = 0; i < campos.length; i += 1) {
     if (campos[i].value === "") {
+      dadosValidos = false;
       window.alert("O campo " + campos[i].name + " é inválido");
     } else {
       dadosValidos = true;
@@ -148,6 +149,26 @@ function verificarNumero(num, min, max) {
   }
 }
 
+// Consolidação dos Dados
+function consolidacao(type) {
+  let divFeedback = document.getElementById("feedback");
+  if (dadosValidos === true) {
+    for (let i = 0; i < campos.length; i += 1) {
+      let feedback = document.createElement("p");
+      feedback.innerText = campos[i].value;
+      divFeedback.appendChild(feedback);
+    }
+  } else {
+    for (let i = 0; i < campos.length; i += 1) {
+      if (campos[i].value === "") {
+        let feedback = document.createElement("p");
+        feedback.innerText = "O campo " + campos[i].name + " é inválido.";
+        divFeedback.appendChild(feedback);
+      }
+    }
+  }
+}
+
 // Botão de Enviar
 addListeners("#btn-enviar", "click", btnActions);
 
@@ -156,4 +177,5 @@ function btnActions(elem) {
   verificarVazios();
   verificarEmail();
   verificarData();
+  consolidacao();
 }
