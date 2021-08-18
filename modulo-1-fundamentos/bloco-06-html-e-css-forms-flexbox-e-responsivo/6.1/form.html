@@ -15,9 +15,10 @@
           >Nome:
           <input
             type="text"
-            name="nome"
+            name="Nome"
             id="input-nome"
             maxlength="40"
+            class="campos"
             required
           />
         </label>
@@ -26,9 +27,10 @@
           >Email:
           <input
             type="email"
-            name="email"
+            name="Email"
             id="input-email"
             maxlength="50"
+            class="campos"
             required
           />
         </label>
@@ -37,9 +39,10 @@
           >CPF:
           <input
             type="text"
-            name="cpf"
+            name="CPF"
             id="input-cpf"
             maxlength="11"
+            class="campos"
             required
           />
         </label>
@@ -48,9 +51,10 @@
           >Endereço:
           <input
             type=""
-            name="endereco"
+            name="Endereço"
             id="input-endereco"
             maxlength="200"
+            class="campos"
             required
           />
         </label>
@@ -59,23 +63,35 @@
           >Cidade:
           <input
             type="text"
-            name="cidade"
+            name="Cidade"
             id="input-cidade"
             maxlength="28"
+            class="campos"
             required
           />
         </label>
         <br />
         <label for="select-estado"
           >Estado:
-          <select name="estados" id="select-estado" required></select>
+          <select name="Estados" id="select-estado" required></select>
         </label>
         <br />
-        <label for="tipo-casa"
-          >Tipo: <input type="radio" name="tipo-moradia" id="tipo-casa" />Casa
-        </label>
-        <label for="tipo-apt">
-          <input type="radio" name="tipo-moradia" id="tipo-apt" />Apartamento
+        <label for=""
+          >Tipo:
+          <input
+            type="radio"
+            name="Tipo de Moradia"
+            id="tipo-casa"
+            class="campos"
+            required
+          />Casa
+          <input
+            type="radio"
+            name="Tipo de Moradia"
+            id="tipo-apt"
+            class="campos"
+            required
+          />Apartamento
         </label>
       </fieldset>
       <fieldset>
@@ -83,49 +99,54 @@
         <label for="input-resumo">
           Resumo do currículo:
           <textarea
-            name="resumoCurrículo"
+            name="Resumo do currículo"
             id="input-resumo"
             cols="30"
             rows="5"
             maxlength="1000"
+            class="campos"
             required
           ></textarea>
         </label>
         <br />
         <label for="input-cargo"
-          >Cargo
+          >Cargo:
           <input
             type="text"
-            name="cargo"
+            name="Cargo"
             id="input-cargo"
             maxlength="40"
+            class="campos"
             required
           />
         </label>
         <br />
         <label for="input-cargoDescricao"
-          >Descrição do cargo
+          >Descrição do cargo:
           <input
             type="text"
-            name="cargoDescricao"
+            name="Descrição do Cargo"
             id="input-cargoDescricao"
             maxlength="500"
+            class="campos"
             required
           />
         </label>
         <br />
         <label for="input-data"
-          >Data de início
+          >Data de início:
           <input
             type="text"
-            name="data"
+            name="Data"
             id="input-data"
-            pattern="[0-31]/[0-12]/\n"
+            class="campos"
             required
           />
         </label>
       </fieldset>
+      <button type="submit" id="btn-enviar">Enviar</button>
     </form>
+    <button id="btn-limpar">Limpar</button>
     <script src="script.js"></script>
   </body>
 </html>
