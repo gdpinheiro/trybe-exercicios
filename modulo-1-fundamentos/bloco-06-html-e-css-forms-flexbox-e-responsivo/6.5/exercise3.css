@@ -95,3 +95,37 @@
     margin-top: -45px;
   }
 }
+
+@media screen and (max-width: 360px) {
+  body {
+    /* background-color: red; */
+  }
+  #aside {
+    display: none;
+  }
+  body {
+    padding: 0;
+  }
+  img {
+    width: 150%;
+  }
+  #navigation {
+    margin-top: 55px;
+  }
+  #navigation ul {
+    display: flex;
+    flex-flow: column;
+  }
+  #navigation li a {
+    float: none;
+  }
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+  }
+  #content-container {
+  }
+}
