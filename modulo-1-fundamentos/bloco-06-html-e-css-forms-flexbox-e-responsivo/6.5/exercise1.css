@@ -1,12 +1,15 @@
 body {
+  font-size: larger;
 }
 h1 {
+  font-size: 40px;
 }
 h2 {
 }
 
 img {
   max-width: 100%;
+  margin: 20px 10px;
 }
 
 figure {
