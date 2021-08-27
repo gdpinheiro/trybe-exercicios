@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "bulma": "^0.9.3",
+    "popup-validation": "^3.0.3"
+  }
+}

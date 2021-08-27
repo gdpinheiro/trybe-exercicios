@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Currículo</title>
+    <link rel="stylesheet" href="bulma/css/bulma.min.css" />
+    <link rel="stylesheet" href="dist/css/DatePickerX.css" />
+    <link href="validation.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+  </head>
+  <body>
+    <form class="container is-max-desktop" id="formulario">
+      <section class="field box section">
+        <h1 class="title">Dados Pessoais</h1>
+        <label for="input-nome" class="label">Nome: </label>
+        <div class="control">
+          <input
+            type="text"
+            name="Nome"
+            id="input-nome"
+            maxlength="40"
+            class="campos input validate"
+            data-validate="required"
+            required
+          />
+        </div>
+        <br />
+        <label for="input-email" class="label">Email:</label>
+        <div class="control">
+          <input
+            type="email"
+            name="Email"
+            id="input-email"
+            maxlength="50"
+            class="campos input validate"
+            data-validate="required, email"
+            required
+          />
+        </div>
+        <br />
+        <label for="input-cpf" class="label">CPF:</label>
+        <div class="control">
+          <input
+            type="text"
+            name="CPF"
+            id="input-cpf"
+            maxlength="11"
+            class="campos input validate"
+            data-validate="required"
+            required
+          />
+        </div>
+        <br />
+        <label for="input-endereco" class="label">Endereço:</label>
+        <div class="control">
+          <input
+            type=""
+            name="Endereço"
+            id="input-endereco"
+            maxlength="200"
+            class="campos input validate"
+            data-validate="required"
+            required
+          />
+        </div>
+        <br />
+        <section class="field is-horizontal">
+          <label for="input-cidade" class="label">Cidade:</label>
+          <div class="control px-2">
+            <input
+              type="text"
+              name="Cidade"
+              id="input-cidade"
+              maxlength="28"
+              class="campos input validate"
+              data-validate="required"
+              required
+            />
+          </div>
+          <br />
+          <label for="select-estado" class="label">Estado:</label>
+          <div class="control px-2">
+            <select
+              name="Estados"
+              id="select-estado"
+              class="select"
+              required
+            ></select>
+          </div>
+          <br />
+          <label for="" class="label pr-1">Tipo de moradia:</label>
+          <div class="control validate" data-validate="required">
+            <label for="tipo-casa" class="radio">
+              <input
+                type="radio"
+                name="Tipo de Moradia"
+                id="tipo-casa"
+                required
+              />Casa
+            </label>
+            <label for="tipo-apt" class="radio">
+              <input
+                type="radio"
+                name="Tipo de Moradia"
+                id="tipo-apt"
+                required
+              />Apartamento
+            </label>
+          </div>
+        </section>
+      </section>
+      <section class="field box section">
+        <h1 class="subtitle">Dados do Último Emprego</h1>
+        <label for="input-resumo" class="label"> Resumo do currículo:</label>
+        <textarea
+          name="Resumo do currículo"
+          id="input-resumo"
+          cols="30"
+          rows="5"
+          maxlength="1000"
+          class="campos textarea has-fixed-size validate"
+          data-validate="required"
+          required
+        ></textarea>
+        <br />
+        <label for="input-cargo" class="label">Cargo:</label>
+        <input
+          type="text"
+          name="Cargo"
+          id="input-cargo"
+          maxlength="40"
+          class="campos input validate"
+          data-validate="required"
+          required
+        />
+        <br />
+        <label for="input-cargoDescricao" class="label"
+          >Descrição do cargo:</label
+        >
+        <input
+          type="text"
+          name="Descrição do Cargo"
+          id="input-cargoDescricao"
+          maxlength="500"
+          class="campos input validate"
+          data-validate="required"
+          required
+        />
+        <br />
+        <label for="input-data" class="label">Data de início:</label>
+        <input
+          type="text"
+          name="Data"
+          id="input-data"
+          class="campos input"
+          required
+        />
+      </section>
+      <div class="buttons is-centered">
+        <button type="submit" id="btn-enviar" class="button is-success">
+          <span class="icon is-small">
+            <i class="fas fa-check"></i>
+          </span>
+          <span>Enviar</span>
+        </button>
+        <button id="btn-limpar" class="button is-danger is-outlined">
+          <span>Limpar</span>
+          <span class="icon is-small">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+      </div>
+    </form>
+    <div class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Seus Dados</p>
+          <button class="delete" aria-label="close" id="modal-close"></button>
+        </header>
+        <section class="modal-card-body"></section>
+      </div>
+    </div>
+    <script src="dist/js/DatePickerX.js"></script>
+    <script src="validation.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
