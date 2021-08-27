@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Currículo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="" method="POST">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="input-nome"
+          >Nome:
+          <input
+            type="text"
+            name="Nome"
+            id="input-nome"
+            maxlength="40"
+            class="campos"
+            required
+          />
+        </label>
+        <br />
+        <label for="input-email"
+          >Email:
+          <input
+            type="email"
+            name="Email"
+            id="input-email"
+            maxlength="50"
+            class="campos"
+            required
+          />
+        </label>
+        <br />
+        <label for="input-cpf"
+          >CPF:
+          <input
+            type="text"
+            name="CPF"
+            id="input-cpf"
+            maxlength="11"
+            class="campos"
+            required
+          />
+        </label>
+        <br />
+        <label for="input-endereco"
+          >Endereço:
+          <input
+            type=""
+            name="Endereço"
+            id="input-endereco"
+            maxlength="200"
+            class="campos"
+            required
+          />
+        </label>
+        <br />
+        <label for="input-cidade"
+          >Cidade:
+          <input
+            type="text"
+            name="Cidade"
+            id="input-cidade"
+            maxlength="28"
+            class="campos"
+            required
+          />
+        </label>
+        <br />
+        <label for="select-estado"
+          >Estado:
+          <select name="Estados" id="select-estado" required></select>
+        </label>
+        <br />
+        <label for=""
+          >Tipo:
+          <input
+            type="radio"
+            name="Tipo de Moradia"
+            id="tipo-casa"
+            required
+          />Casa
+          <input
+            type="radio"
+            name="Tipo de Moradia"
+            id="tipo-apt"
+            required
+          />Apartamento
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Dados do Último Emprego</legend>
+        <label for="input-resumo">
+          Resumo do currículo:
+          <textarea
+            name="Resumo do currículo"
+            id="input-resumo"
+            cols="30"
+            rows="5"
+            maxlength="1000"
+            class="campos"
+            required
+          ></textarea>
+        </label>
+        <br />
+        <label for="input-cargo"
+          >Cargo:
+          <input
+            type="text"
+            name="Cargo"
+            id="input-cargo"
+            maxlength="40"
+            class="campos"
+            required
+          />
+        </label>
+        <br />
+        <label for="input-cargoDescricao"
+          >Descrição do cargo:
+          <input
+            type="text"
+            name="Descrição do Cargo"
+            id="input-cargoDescricao"
+            maxlength="500"
+            class="campos"
+            required
+          />
+        </label>
+        <br />
+        <label for="input-data"
+          >Data de início:
+          <input
+            type="text"
+            name="Data"
+            id="input-data"
+            class="campos"
+            required
+          />
+        </label>
+      </fieldset>
+      <button type="submit" id="btn-enviar">Enviar</button>
+    </form>
+    <button id="btn-limpar">Limpar</button>
+    <div id="feedback"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
