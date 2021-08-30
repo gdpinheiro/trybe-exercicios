@@ -77,12 +77,39 @@ const sumStudents = () => {
     const nStud = lessons[index][1][1][1]
     result += nStud
   }
-  console.log(result);
+  // console.log(result);
 }
 
 sumStudents()
 
 // 7 - Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto.
 
+const returnValue = (object, position) => Object.values(object)[position]
+
+// console.log(returnValue(lesson1, 0))
 
 // 8 - Crie uma função que verifique se o par (chave / valor) existe na função. Essa função deve possuir três parâmetros, sendo eles: o objeto, o nome da chave e o valor da chave.
+
+const checkPair = (object, key, value) => {
+  // Key
+  const arrayKeys = Object.keys(object)
+  const chkKey = arrayKeys.includes(key)
+  const index = arrayKeys.indexOf(key)
+  const validKey = Object.is(arrayKeys[index], key)
+  console.log(validKey);
+
+  // Value
+  const arrayValue = Object.values(object)
+  const chkValue = arrayValue.includes(value)
+  const validValue = Object.is(arrayValue[index], value)
+  console.log(validValue);
+
+  // Pair check
+  if (validKey === true && validValue === true) {
+    return true
+  } else {
+    return false
+  }
+}
+
+console.log(checkPair(lesson1, 'materia', 'Maria Clara'))
