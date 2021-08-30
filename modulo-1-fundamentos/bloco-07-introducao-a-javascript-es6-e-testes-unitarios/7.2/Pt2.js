@@ -28,22 +28,34 @@ addKeyValue(lesson2, 'turno', 'manhã')
 // 2 - Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
 const listKeys = object => {
   let keyList = Object.keys(object)
-  console.log(keyList);
+  // console.log(keyList);
 }
 
 listKeys(lesson2)
 // 3 - Crie uma função para mostrar o tamanho de um objeto.
 const objectSize = object => {
   let obSize = Object.keys(object).length
-  console.log(obSize);
+  // console.log(obSize);
 }
 
 objectSize(lesson2)
 // 4 - Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro.
 const listValues = object => {
   let valuesList = Object.values(object)
-  console.log(valuesList);
+  // console.log(valuesList);
 }
 
 listValues(lesson2)
 // 5 - Crie um objeto de nome allLessons , que deve agrupar todas as aulas através do Object.assign . Cada chave desse novo objeto será uma aula, sendo essas chaves: lesson1 , lesson2 e lesson3.
+
+const al1 = {}
+const al2 = {}
+const al3 = {}
+
+addKeyValue(al1, 'lesson1', Object.entries(lesson1))
+addKeyValue(al2, 'lesson2', Object.entries(lesson2))
+addKeyValue(al3, 'lesson3', Object.entries(lesson3))
+
+const allLessons = Object.assign({}, al1, al2, al3)
+
+console.log(allLessons);
