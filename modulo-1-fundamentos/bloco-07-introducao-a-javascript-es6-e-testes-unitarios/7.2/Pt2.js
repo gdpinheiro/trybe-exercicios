@@ -27,13 +27,18 @@ const addKeyValue = (object, key, value) => {
 addKeyValue(lesson2, 'turno', 'manhã')
 // 2 - Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
 const listKeys = object => {
-  console.log(Object.keys(object));
+  let keyList = Object.keys(object)
+  console.log(keyList);
 }
 
 listKeys(lesson2)
 // 3 - Crie uma função para mostrar o tamanho de um objeto.
+const objectSize = object => {
+  let obSize = Object.keys(object).length
+  console.log(obSize);
+}
 
-
+objectSize(lesson2)
 // 4 - Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro.
 
 
