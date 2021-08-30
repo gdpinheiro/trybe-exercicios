@@ -40,6 +40,10 @@ const objectSize = object => {
 
 objectSize(lesson2)
 // 4 - Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro.
+const listValues = object => {
+  let valuesList = Object.values(object)
+  console.log(valuesList);
+}
 
-
+listValues(lesson2)
 // 5 - Crie um objeto de nome allLessons , que deve agrupar todas as aulas através do Object.assign . Cada chave desse novo objeto será uma aula, sendo essas chaves: lesson1 , lesson2 e lesson3.
