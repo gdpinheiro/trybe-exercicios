@@ -35,7 +35,6 @@ const order = {
 };
 
 const orderAddress = order['address']
-const orderPizza = order['order']['pizza']
 const orderDrinks = order['order']['drinks']
 const orderDelivery = order['order']['delivery']
 const orderPayment = order['payment']
@@ -44,7 +43,7 @@ const orderPayment = order['payment']
 
 const customerInfo = (order) => {
   // Adicione abaixo as informações necessárias.
-  let cInfoLog = `Olá Ana Silveira, entrega para: ${order['name']}, Telefone: ${order['phoneNumber']}, R. ${orderAddress['street']}, Nº: ${orderAddress['number']}, AP: ${orderAddress['apartment']}`
+  let cInfoLog = `Olá ${orderDelivery['deliveryPerson']}, entrega para: ${order['name']}, Telefone: ${order['phoneNumber']}, R. ${orderAddress['street']}, Nº: ${orderAddress['number']}, AP: ${orderAddress['apartment']}`
   console.log(cInfoLog)
 }
 
@@ -56,7 +55,11 @@ customerInfo(order);
 
 const orderModifier = (order) => {
   // Adicione abaixo as informações necessárias.
-
+  order.name = 'Luiz Silva'
+  orderPayment.total = '50, 00'
+  const pizzaFlavour = Object.keys(order['order']['pizza'])
+  let oModLog = `Olá ${order['name']}, o total do seu pedido de ${pizzaFlavour[0]}, ${pizzaFlavour[1]} e ${orderDrinks['coke']['type']} é R$ ${orderPayment['total']}.`
+  console.log(oModLog);
 }
 
 orderModifier(order);
