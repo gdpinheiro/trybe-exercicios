@@ -65,9 +65,6 @@ const books = [
 
 // Adicione o código do exercício aqui:
 
-//Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene-o pelo livro mais velho.
-// Dica: use as funções filter e sort
-
 const expectedResult = [
   {
     id: 6,
@@ -92,8 +89,12 @@ const expectedResult = [
   },
 ];
 
+//Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene-o pelo livro mais velho.
+// Dica: use as funções filter e sort
+
 function oldBooksOrdered() {
-  // escreva seu código aqui
+  let result = books.filter((elem) => elem.releaseYear < 1961);
+  return result.sort((a, b) => a.releaseYear - b.releaseYear);
 }
 
 assert.deepStrictEqual(oldBooksOrdered(), expectedResult);
