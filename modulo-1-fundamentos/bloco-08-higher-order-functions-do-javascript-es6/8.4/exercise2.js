@@ -71,7 +71,10 @@ const expectedResult =
 // Crie uma string com os nomes de todas as pessoas autoras.
 
 function reduceNames() {
-  // escreva seu código aqui
+  let result = books.reduce((acc, cur) => {
+    return `${acc}, ${cur.author.name}`;
+  }, "");
+  return result.slice(2) + ".";
 }
 
 assert.strictEqual(reduceNames(), expectedResult);
