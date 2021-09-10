@@ -9,6 +9,15 @@ const chiron = ["Chiron", "Bugatti", 2016];
 
 // escreva toObject abaixo
 
+const toObject = (car) => {
+  [name, brand, year] = car;
+  return {
+    name,
+    brand,
+    year,
+  };
+};
+
 assert.deepStrictEqual(toObject(palio), {
   name: "Palio",
   brand: "Fiat",
