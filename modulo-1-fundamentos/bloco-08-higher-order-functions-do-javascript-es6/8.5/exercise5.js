@@ -6,6 +6,7 @@ const myList = [1, 2, 3];
 //Dica: use array destructuring .
 
 // escreva swap abaixo
+const swap = (array) => (array[(1, 2, 3)] = [3, 2, 1]);
 
 const swappedList = swap(myList);
 
