@@ -32,6 +32,8 @@ const people = [
 // Dica: use object destructuring .
 
 // escreva filterPeople abaixo
+const filterPeople = (peopleObject) =>
+  peopleObject.filter((elem) => elem.bornIn < 2001);
 
 const filteredPeople = filterPeople(people);
 
