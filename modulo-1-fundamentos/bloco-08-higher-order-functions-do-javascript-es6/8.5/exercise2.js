@@ -1,8 +1,16 @@
 const assert = require("assert");
 
-// escreva sum abaixo
 // Crie uma função sum que dado um número variável de elementos retorna a soma desses elementos. Ou seja:
 // Dica: use parâmetro rest .
+
+// escreva sum abaixo
+
+const sum = (...args) => {
+  if (args.length === 0) {
+    return 0;
+  }
+  return args.reduce((acc, cur) => acc + cur);
+};
 
 assert.strictEqual(sum(), 0);
 assert.strictEqual(sum(1), 1);
