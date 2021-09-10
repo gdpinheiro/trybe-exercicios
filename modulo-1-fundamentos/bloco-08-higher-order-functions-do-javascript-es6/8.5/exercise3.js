@@ -18,8 +18,11 @@ const gunnar = {
 // Dica: use object destructuring.
 
 // complete a assinatura da função abaixo
-const personLikes = () =>
-  `${name} is ${age} years old and likes ${likes.join(", ")}.`;
+
+const personLikes = (objectName) => {
+  const { name, age, likes } = objectName;
+  return `${name} is ${age} years old and likes ${likes.join(", ")}.`;
+};
 
 assert.strictEqual(
   personLikes(alex),
