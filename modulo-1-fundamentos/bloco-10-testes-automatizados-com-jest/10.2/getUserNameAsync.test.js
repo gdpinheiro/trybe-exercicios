@@ -15,3 +15,15 @@ const findUserById = (id) =>
   });
 
 const getUserName = (userId) => findUserById(userId).then((user) => user.name);
+
+describe("Tests the getUserName function", () => {
+  it("checks the function callback", async () => {
+    try {
+      await expect(getUserName(1)).resolves.toBe("Mark");
+    } catch (error) {
+      await expect(error).rejects.toEqual(
+        new Error(`User with ${id} not found.`)
+      );
+    }
+  });
+});
