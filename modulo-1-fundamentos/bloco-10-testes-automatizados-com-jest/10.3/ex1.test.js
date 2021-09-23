@@ -1,13 +1,8 @@
-const randomNumber = jest
-  .fn(() => {
-    min = Math.ceil(1);
-    max = Math.floor(100);
-    return Math.floor(Math.random() * (max - min + 1) + min);
-  })
-  .mockReturnValue(10);
+const randomNumber = require("./ex1-3");
+jest.mock("./ex1-3.js");
 
 describe("Tests the function randomNumber", () => {
-  randomNumber;
+  randomNumber.mockReturnValue(10);
   it("should have been called", () => {
     randomNumber();
     expect(randomNumber).toHaveBeenCalled();
