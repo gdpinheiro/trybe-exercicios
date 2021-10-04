@@ -1,5 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+
+const Task = (value) => {
+  return <li>{value}</li>;
+};
+
+const compromissos = ["Estudar", "Comer", "Jogar", "Dormir"];
 
 function App() {
   return (
@@ -17,6 +23,11 @@ function App() {
         >
           Learn React
         </a>
+        <ul>
+          {compromissos.map((comp) => {
+            return Task(comp);
+          })}
+        </ul>
       </header>
     </div>
   );
