@@ -4,20 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Conheça o Stomatopoda</title>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
   </head>
-  <body>
-    <header class="header">Soco a 80km/h: Conheça o Stomatopoda</header>
-    <nav class="nav">
-      <ul>
-        <li><a href="">Página Inicial</a></li>
-        <li><a href="">Sobre</a></li>
-        <li><a href="">Contato</a></li>
+  <body class="bg-info bg-gradient bg-opacity-50">
+    <header class="h1 text-center">Soco a 80km/h: Conheça o Stomatopoda</header>
+    <nav class="nav justify-content-center">
+      <ul class="btn-group">
+        <li class="btn btn-primary">
+          <a href="" class="text-white">Página Inicial</a>
+        </li>
+        <li class="btn btn-primary">
+          <a href="" class="text-white">Sobre</a>
+        </li>
+        <li class="btn btn-primary">
+          <a href="" class="text-white">Contato</a>
+        </li>
       </ul>
     </nav>
-    <main>
+    <main class="container">
       <article>
-        <h1>Fatos sobre o Stomatopoda</h1>
+        <h1 class="h1">Fatos sobre o Stomatopoda</h1>
         <section class="introducao">
           <p>
             O stomatopoda (<em>Odontodactylus scyllarus</em>, poplarmente
@@ -29,11 +46,15 @@
             tropicais e subtropicais e são predadoras letais que se alimentam de
             caranguejos, camarões, moluscos e peixes.
           </p>
-          <img src="tamarutaca.jpg" alt="Imagem da tamarutaca" />
+          <img
+            src="tamarutaca.jpg"
+            alt="Imagem da tamarutaca"
+            class="img-fluid img-thumbnail"
+          />
         </section>
-        <section class="tabela">
+        <section>
           <aside>
-            <table>
+            <table class="table">
               <thead>
                 <tr>
                   <th colspan="2">Classificação científica</th>
@@ -69,7 +90,7 @@
           </aside>
         </section>
         <section class="visao">
-          <h2>Visão</h2>
+          <h2 class="h2">Visão</h2>
           <p>
             Esses animais possuem o mais complexo sistema de visão de cores do
             mundo animal, pois enxergam 12 cores primárias, correspondentes aos
@@ -98,11 +119,11 @@
           <img
             src="tamarutaca olhos.jpg"
             alt="Close nos olhos da tamarutaca"
-            width="400px"
+            class="img-fluid img-thumbnail"
           />
         </section>
         <section class="patas">
-          <h2>As Patas Superpoderosas</h2>
+          <h2 class="h2">As Patas Superpoderosas</h2>
           <p>
             Elas possuem duas patas superpoderosas na parte dianteira que,
             quando acionadas, são capazes de proferir um golpe com a mesma
@@ -121,13 +142,13 @@
           <img
             src="tamarutaca pata.png"
             alt="Imagem mostrando em detalhes a pata da tamarutaca"
-            width="400px"
+            class="img-fluid img-thumbnail"
           />
         </section>
         <section class="video">
-          <h2>Vídeo sobre a tamarutaca:</h2>
+          <h2 class="h2">Vídeo sobre a tamarutaca:</h2>
           <iframe
-            width="560"
+            width="520"
             height="315"
             src="https://www.youtube.com/embed/E0Li1k5hGBE"
             title="YouTube video player"
@@ -137,8 +158,8 @@
           ></iframe>
         </section>
         <section class="referencias">
-          <h3>Referências Bibliográficas</h3>
-          <p>
+          <h3 class="h3">Referências Bibliográficas</h3>
+          <p class="fst-italic fs-6">
             <a href="https://pt.wikipedia.org/wiki/Stomatopoda" target="_blank"
               >Wikipedia: Stomatopoda</a
             >
@@ -160,7 +181,7 @@
         </section>
       </article>
     </main>
-    <footer>
+    <footer class="font-monospace fs-6 text-center">
       Conteúdo compilado por Giovanni Duarte Pinheiro, Turma 15, 2021.
     </footer>
   </body>
