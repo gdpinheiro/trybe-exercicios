@@ -1,0 +1,37 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.pokedex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pokemonCard {
+  border: 5px solid black;
+  border-radius: 25px;
+  margin: 10px;
+  width: 46%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemonStats {
+  display: flex;
+  flex-direction: column;
+}
+
+.pokemonName {
+}
+
+.pokemonType {
+}
+
+.pokemonWeight {
+}
+
+.pokemonImage {
+}
